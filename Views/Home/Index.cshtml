@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    var lista = ViewBag.data as IEnumerable<Api_Teste_Sofisa.Classes.GitObject>;
+}
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Teste 3</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Public+Sans:300,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container-fluid mt-3">
+        <div class="jumbotron jumbotron-fluid bg-info text-white">
+            <div class="container-fluid">
+                <h1 class="display-5">Repositório do git</h1>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr class="table-info">
+                        <th scope="col">ID</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">URL</th>
+                        <th scope="col">Linguagem</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in lista)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.Nome</td>
+                            <td>@item.Url</td>
+                            <td>@item.Linguagem</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+</body>
+
