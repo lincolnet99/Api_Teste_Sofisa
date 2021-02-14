@@ -35,7 +35,7 @@
                     {
                         <tr>
                             <td>@item.Id</td>
-                            <td>@item.Nome</td>
+                            <td><button class="redirectbtn btn btn-info" onclick="redirect(@item.Id)">@item.Nome</button></td>
                             <td>@item.Url</td>
                             <td>@item.Linguagem</td>
                         </tr>
@@ -45,5 +45,10 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript">
+        function redirect(d) {
+            window.location.href = "/Repositorio/Index/?idRepositorio="+d
+        }
+    </script> 
 </body>
 

@@ -1,0 +1,52 @@
+﻿@model Api_Teste_Sofisa.Classes.GitObject
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div>
+    <h4>Detalhes</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Url)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Url)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Linguagem)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Linguagem)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UltimaAtualizacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UltimaAtualizacao)
+        </dd>
+
+    </dl>
+</div>

@@ -129,9 +129,11 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Classes\GitObject.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RepositorioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Métodos\Métodos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -154,6 +156,7 @@
   <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="Views\Repositorio\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
